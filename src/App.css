@@ -1,0 +1,90 @@
+body {
+  background-color: rgb(59, 70, 100);
+}
+.all {
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.theme {
+  display: flex;
+  color: white;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+.write {
+  font-size: 48px;
+  font-weight: 700;
+  color: white;
+  text-align: right;
+  padding: 32px;
+  background-color: rgb(24, 31, 50);
+  border-radius: 8px;
+  border: none;
+}
+.regular {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: rgba(24, 31, 50, 0.548);
+  padding: 32px;
+  border-top: 5px;
+  border-radius: 8px 8px 0px 0px;
+}
+button {
+  font-size: 32px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0 4px rgb(148, 145, 145);
+  color: rgba(24, 31, 50, 0.856);
+}
+.Bigbuttons {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(24, 31, 50, 0.548);
+  padding: 32px;
+  padding-top: 5px;
+  border-radius: 0px 0px 8px 8px;
+}
+.Big {
+  width: 200px;
+  align-items: center;
+  background-color: rgb(100, 114, 153);
+  box-shadow: 0 4px rgba(100, 114, 153, 0.678);
+  color: white;
+}
+#equal {
+  background-color: rgb(209, 63, 48);
+  box-shadow: 0 4px rgba(209, 64, 48, 0.39);
+  font-size: large;
+}
+
+#del {
+  background-color: rgb(100, 114, 153);
+  box-shadow: 0 4px rgba(100, 114, 153, 0.678);
+  color: white;
+  font-size: large;
+}
+@media screen and (max-width: 480px) {
+  .all {
+    max-width: 350px;
+  }
+  .Bigbuttons {
+    gap: 20px;
+  }
+  .write {
+    padding: 25px;
+  }
+}
